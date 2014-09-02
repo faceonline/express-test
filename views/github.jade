@@ -1,0 +1,8 @@
+extends index
+
+block testBlock
+    ul
+        each val in body
+            pre= val
+            each v,i in val
+              pre= '\tValue = ' + v + ', Index = ' + i
