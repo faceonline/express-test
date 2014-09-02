@@ -1,8 +1,7 @@
-extends index
+extends layout
 
-block testBlock
-    ul
-        each val in body
-            pre= val
-            each v,i in val
-              pre= '\tValue = ' + v + ', Index = ' + i
+block content
+    each val in body
+        each v,i in val
+            if i == 'url'
+                h3= 'URL: ' + v
